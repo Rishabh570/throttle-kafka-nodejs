@@ -1,0 +1,43 @@
+{
+  "name": "throttle-kafka-nodejs",
+  "version": "1.0.0",
+  "description": "Uses kafka-node to implement throttled pub-sub in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node source --require './src/appsignal.cjs' server.js",
+    "dev": "source .dev.env && npx nodemon --require './src/appsignal.cjs' server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"./**/*.js\"",
+    "commit": "git add . && git-cz",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rishabh570/throttle-kafka-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rishabh570/throttle-kafka-nodejs/issues"
+  },
+  "homepage": "https://github.com/Rishabh570/throttle-kafka-nodejs#readme",
+  "dependencies": {
+    "@appsignal/nodejs": "^3.0.18",
+    "async": "^3.2.4",
+    "bunyan": "^1.8.15",
+    "express": "^4.18.2",
+    "kafka-node": "^5.0.0",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^7.4.4",
+    "nanoid": "^3.1.25"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.2"
+  }
+}
