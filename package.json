@@ -4,8 +4,8 @@
   "description": "Uses kafka-node to implement throttled pub-sub in Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "node source --require './src/appsignal.cjs' server.js",
-    "dev": "source .dev.env && npx nodemon --require './src/appsignal.cjs' server.js",
+    "start": "node --require './src/appsignal.cjs' server.js",
+    "dev": "npx nodemon --require './src/appsignal.cjs' server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write \"./**/*.js\"",
     "commit": "git add . && git-cz",

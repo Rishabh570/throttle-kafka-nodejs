@@ -1,5 +1,6 @@
 module.exports = {
   appName: 'throttle-kafka-nodejs',
+  appsignalAPIKey: process.env.APPSIGNAL_PUSH_API_KEY,
   database: {
     host: process.env.MONGODB_URL || 'mongodb://localhost:27017/kafka-nodejs-mongodb-database',
   },
