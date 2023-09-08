@@ -30,7 +30,7 @@ If any one of them stops or exits the process, try to restart both. You should o
 - Open a new tab in your terminal and create a test topic. We’ll use this topic throughout the article.
 
 ```shell
-bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+bin/kafka-topics.sh --create --topic testTopic2 --bootstrap-server localhost:9092
 ```
 
 To confirm if the topic has been successfully created, you can run the following command:
